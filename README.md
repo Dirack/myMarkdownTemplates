@@ -2,6 +2,7 @@
 Apenas um repositório de teste, será logo apagado
 
 [![GitHub version](https://badge.fury.io/gh/conventional-changelog%2Fstandard-version.svg)](https://badge.fury.io/gh/conventional-changelog%2Fstandard-version)
+
 This badge gets version from github releases.
 
 # teste div
