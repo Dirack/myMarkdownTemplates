@@ -1,17 +1,17 @@
-## Welcome to Try it on docker VFSA Environment!
+## Welcome to Try it on docker CREGATHERSTACK Environment!
 
-This is a docker container with VFSA 1.1.1, and Madagascar package version 3.0 installed and pre-configureds designed as a "try on" experience. 
+This is a docker container with CREGATHERSTACK 0.1.0, and Madagascar package version 3.0 installed and pre-configureds designed as a "try on" experience. 
 This container has minimum resources configuration to allow portability, you can install other packages with apt-get if you need, use
 the following user account:
 
 - Your user is: tryitondocker
 - Your password is (sudo included): 12345
 
-#### About VFSA
+#### About CREGATHERSTACK
 
-VFSA is an open-source software package for Very Fast Simulated Annealing global optimization of the zero offset Common Reflection Surface (CRS)
-parameters in Madagascar. You can get more details in [VFSA main page](https://github.com/Dirack/vfsa). VFSA package is installed in 
-$RSFSRC/user/vfsa, you can check out this directory for the programs and user examples.
+CREGATHERSTACK is an open-source software package for Common Reflection Element (CRE) stack in Madagascar.
+You can get more details in [CREGATHERSTACK main page](https://github.com/Dirack/creGatherStack). CREGATHERSTACK package is installed in 
+$RSFSRC/user/creGatherStack, you can check out this directory for the programs and user examples.
 
 #### About Madagascar
 
