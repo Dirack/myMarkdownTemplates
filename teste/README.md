@@ -1,6 +1,6 @@
 ## Welcome to Try it on docker VFSA Environment!
 
-This is a docker container with VFSA 1.0.0, and Madagascar package version 3.0 installed and pre-configureds designed as a "try on" experience. 
+This is a docker container with VFSA 1.1.1, and Madagascar package version 3.0 installed and pre-configureds designed as a "try on" experience. 
 This container has minimum resources configuration to allow portability, you can install other packages with apt-get if you need, use
 the following user account:
 
