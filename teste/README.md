@@ -1,7 +1,7 @@
 ## Welcome to Try it on docker Madagascar Environment!
 
 This is a docker container with Madagascar package version 3.0 installed and pre-configured designed as a "try on" experience. 
-This container has minimum resources configuration to allow portability, you can install other packages with apt-get if you need with
+This container has minimum resources configuration to allow portability, you can install other packages with apt-get if you need, use
 the following user account:
 
 - Your user is: tryitondocker
