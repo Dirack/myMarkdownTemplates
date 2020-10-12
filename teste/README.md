@@ -44,7 +44,7 @@ command described in the previous section.
 
 Madagascar stores user programs in $RSFSRC/user directory. So, you can create a new directory on that, and put your programs inside.
 In this directory, such as every user's directory in Madagascar, you need a compilation 
-[SConstruct](https://github.com/Dirack/creGatherStack/files/5365605/SConstruct.zip) that compile your C programs.
+[SConstruct](https://github.com/Dirack/creGatherStack/files/5365605/SConstruct.zip) to compile your C programs.
 
 For the main c program you have to add 'M' letter as prefix, for instance 'Mmyprogram.c' is a valid name. And in the compilation
 SConstruct, in the variable progs, you should add your program name without 'M' preffix and '.c' suffix as follows:
