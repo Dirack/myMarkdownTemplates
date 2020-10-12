@@ -38,24 +38,31 @@ You can show its variable content with the following comand:
 #### How to add new programs on my local version of Madagascar?
 
 If you need to install new programs in your local Madagascar package you should know where Madagascar binaries and
-source code is installed: Usually, Madagascar keeps the path of your local copy source files in the $RSFSRC environment variable.
-You can show that on a bash terminal using 'echo' command:
+source code is installed. Usually, Madagascar keeps the path of your local copy source files in the RSFSRC environment variable.
+And Madagascar will install executable files on your RSFROOT directory. You can show that environment variables with the 'echo'
+command described in the previous section.
 
-```sh
-~$ echo "$RSFSRC"
+Madagascar stores user programs in $RSFSRC/user directory. So, you can create a new directory on that, and put your programs inside.
+In this directory, such as every user's directory in Madagascar, you need a compilation 
+[SConstruct](https://github.com/Dirack/creGatherStack/files/5365605/SConstruct.zip) that compile your C programs.
+
+For the main c program you have to add 'M' letter as prefix, for instance 'Mmyprogram.c' is a valid name. And in the compilation
+SConstruct, in the variable progs, you should add your program name without 'M' preffix and '.c' suffix as follows:
+
+```py
+import os, sys, re, string
+sys.path.append('../../framework') 
+import bldutil
+
+# Put your name programs in progs variable 
+# without 'M' preffix and '.c' extension
+progs = '''
+myprogram
+'''
 ```
 
-And Madagascar will install executable files on your $RSFROOT directory. You can show that environment variable
-with 'echo' too:
-
-```sh
-~$ echo "$RSFROOT"
-```
-
-Madagascar stores user programs in $RSFSRC/user directory. So, you can create a new directory or put this
-repository inside that directory. In this repository, such as every user's repository in Madagascar, we have a compilation 
-[SConstruct](https://github.com/Dirack/vfsa/blob/master/SConstruct) that compile the C programs.
-Run 'scons' on your $RSFSRC/user/creGatherInterpolation repository to compile it:
+So run 'scons' command on your directory that is installed in $RSFSRC/user directory to compile your programs
+defined in progs variable:
 
 ```shell
 ~$ scons
@@ -69,4 +76,5 @@ And run 'scons install' in the top directory of your local Madagascar installati
 ```
 
 For more details, please check out the Madagascar official documentation wiki in the section 
-["Adding new programs to Madagascar"](http://www.ahay.org/wiki/Adding_new_programs_to_Madagascar)
+["Adding new programs to Madagascar"](http://www.ahay.org/wiki/Adding_new_programs_to_Madagascar) and this 
+[tutorial on Youtube](https://www.youtube.com/watch?v=3Kkh0KF_4G8)
