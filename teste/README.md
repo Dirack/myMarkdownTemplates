@@ -46,22 +46,23 @@ Madagascar stores user programs in $RSFSRC/user directory. So, you can create a 
 In this directory, such as every user's directory in Madagascar, you need a compilation 
 [SConstruct](https://github.com/Dirack/creGatherStack/files/5365605/SConstruct.zip) to compile your C programs.
 
-For the main c program you have to add 'M' letter as prefix, for instance 'Mmyprogram.c' is a valid name. And in the compilation
-SConstruct, in the variable progs, you should add your program name without 'M' preffix and '.c' suffix as follows:
+You have to add 'M' capital letter as prefix of the source code filename of the main C program that you want to install on Madagascar.
+For instance, 'Mmyprogram.c' is a valid name. And, you have also to add this filename in the variable 'progs' of the compilation SConstruct
+without 'M' preffix and '.c' suffix as follows:
 
 ```py
 import os, sys, re, string
 sys.path.append('../../framework') 
 import bldutil
 
-# Put your name programs in progs variable 
-# without 'M' preffix and '.c' extension
+# Put your source code filenames in progs variable 
+# without 'M' preffix and '.c' suffix
 progs = '''
 myprogram
 '''
 ```
 
-So run 'scons' command on your directory that is installed in $RSFSRC/user directory to compile your programs
+So run 'scons' command on your directory that is installed in $RSFSRC/user directory to compile the programs
 defined in progs variable:
 
 ```shell
