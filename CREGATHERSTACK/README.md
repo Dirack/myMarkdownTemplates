@@ -1,6 +1,6 @@
 ## Welcome to Try it on docker CREGATHERSTACK Environment!
 
-This is a docker container with _CREGATHERSTACK [[[TEMPLATE]]]_, and Madagascar package version 3.0 installed and pre-configureds designed as a "try on" experience. 
+This is a docker container with _CREGATHERSTACK [[[PKGVERSION]]]_, and Madagascar package version 3.0 installed and pre-configureds designed as a "try on" experience. 
 This container has minimum resources configuration to allow portability, you can install other packages with apt-get if you need, use
 the following user account:
 
